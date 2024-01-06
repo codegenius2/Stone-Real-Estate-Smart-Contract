@@ -16,8 +16,7 @@
     "@truffle/hdwallet-provider": "^2.1.15",
     "dotenv": "^16.3.1",
     "erc721a": "^4.2.3",
-    "truffle": "^5.11.5",
-    "web3": "^4.1.2"
+    "truffle": "^5.11.5"
   },
   "devDependencies": {
     "@openzeppelin/test-helpers": "^0.5.16",
