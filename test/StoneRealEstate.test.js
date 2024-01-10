@@ -245,14 +245,13 @@ contract("StoneRealEstate", (accounts) => {
             });
           });
           context("when called from others", () => {
-            it("...should revert and throw NotAdminOrOwner error", async () => {
-              await expectRevertCustomError(
-                StoneRealEstate,
-                StoneRealEstateInstance.getAllWhitelistedAddress({
-                  from: user1,
-                }),
-                "NotAdminOrOwner"
-              );
+            it("...should return an empty array", async () => {
+              await StoneRealEstateInstance.addToAdmin(admin, { from: owner });
+              expect(
+                await StoneRealEstateInstance.getAllWhitelistedAddress({
+                  from: admin,
+                })
+              ).to.deep.equal([]);
             });
           });
         });

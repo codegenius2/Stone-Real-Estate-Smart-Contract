@@ -6,7 +6,7 @@ module.exports = {
   networks: {
     development: {
       host: "127.0.0.1", // Localhost (default: none)
-      port: 8545, // 9545 for truffle develop // 8545 Standard Ethereum port (default: none)
+      port: 9545, // 9545 for truffle develop // 8545 Standard Ethereum port (default: none)
       network_id: "*", // Any network (default: none)
     },
     ropsten: {

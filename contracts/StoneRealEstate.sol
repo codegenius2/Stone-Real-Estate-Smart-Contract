@@ -112,12 +112,7 @@ contract StoneRealEstate is ERC721AQueryable, ReentrancyGuard, Ownable {
         _;
     }
 
-    function getAllWhitelistedAddress()
-        public
-        view
-        onlyAdminOrOwner
-        returns (address[] memory)
-    {
+    function getAllWhitelistedAddress() public view returns (address[] memory) {
         return whitelist;
     }
 
